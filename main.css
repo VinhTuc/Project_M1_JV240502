@@ -1,0 +1,178 @@
+.admin_page {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    background-color: rgb(77, 75, 75);
+    color: white;
+}
+
+.user_box {
+    display: flex;
+    align-items: center;
+}
+
+.user_box>span {
+    margin-right: 5px;
+}
+
+.admin_page_container {
+    height: calc(100vh - 40px);
+    display: flex;
+}
+
+.menu_bar {
+    height: 100%;
+    width: 200px;
+    border-right: 1px solid black;
+    padding: 5px 0;
+}
+
+.menu_bar>ul>li {
+    margin-bottom: 10px;
+}
+
+.content_box {
+    height: 100%;
+    flex: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto",
+        sans-serif;
+    color: #231651;
+}
+
+/* ------- NAVBAR CSS ------- */
+/* .navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 150px;
+    box-shadow: 0px 1px 5px 0px rgba(213, 213, 213, 0.75);
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(213, 213, 213, 0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(213, 213, 213, 0.75);
+    margin-bottom: 5px;
+}
+
+.navbar-wrapper .logo img {
+    width: 170px;
+}
+
+.navbar-wrapper .main-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar-wrapper .main-nav div,
+.navbar-wrapper .language {
+    font-weight: 500;
+}
+
+.navbar-wrapper .language {
+    padding: 5px 10px;
+    height: 30px;
+    background-color: #f8f7fa;
+    border: none;
+    border-radius: 5px;
+} */
+
+/* ------- HERO SECTION CSS ------- */
+
+.hero-section {
+    display: flex;
+    background-image: url(https://rikkei.edu.vn/wp-content/uploads/2024/01/bg-home1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 0px 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-section .hero-img {
+    width: 600px;
+}
+
+.hero-section .main-content-wrapper .main-content-tittle {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero-section .main-content-wrapper .benefit-list {
+    list-style-type: none;
+}
+
+.hero-section .main-content-wrapper .benefit-list li {
+    margin-bottom: 16px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section .main-content-wrapper .benefit-list li img {
+    margin-right: 5px;
+}
+
+.hero-section .button-group .btn {
+    padding: 12px 17px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: #bc2228;
+    color: white;
+}
+
+.hero-section .button-group .test-btn {
+    border: 1px solid #ecf0f1;
+    background-color: none;
+    color: #231651;
+}
+
+/*------- BENEFIT-SECTION -------*/
+.benefit-section {
+    position: relative;
+}
+
+.benefit-section .benefit-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    background-color: white;
+    top: -80PX;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.benefit-section .benefit-wrapper .benefit-item {
+    border: 1px solid #c1bcd1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 250px;
+    box-shadow: 0px 1px 5px 0px rgba(213, 213, 213, 0.75);
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(213, 213, 213, 0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(213, 213, 213, 0.75);
+}
+
+.benefit-section .benefit-wrapper .benefit-item h3 {
+    color: red;
+    font-weight: 400;
+    font-size: 23px;
+    margin-bottom: 20px;
+}

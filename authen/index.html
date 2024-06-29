@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>authen</title>
+</head>
+<script>
+    function checkAuthen() {
+        console.log("localStorage.getItem('userLogin')", localStorage.getItem("userLogin"))
+        if (localStorage.getItem("userLogin")) {
+            window.location.href = "/"
+        }
+    }
+    checkAuthen()
+</script>
+<link rel="stylesheet" href="./authen.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<body>
+    Authen Page
+    <div class="container">
+        <div class="left-section"></div>
+        <div class="right-section">
+            <div class="login-container">
+
+                <form onsubmit="login(event)">
+                    <h2 class="login-title"><i class="fas fa-user-circle"></i> Login</h2>
+                    <div class="form-control">
+                        <i class="fas fa-user icon"></i>
+                        <input required name="userName" type="text" placeholder="Username" id="username">
+                    </div>
+                    <div class="form-control">
+                        <i class="fas fa-lock icon"></i>
+                        <input required name="password" type="password" placeholder="Password" id="password">
+                    </div>
+                    <div class="remember-me">
+                        <input type="checkbox" id="rememberMe" class="checkbox-input">
+                        <span class="checkbox-custom"></span>
+                        <label for="rememberMe">Remember me</label>
+                    </div>
+
+                    <div class="social-login">
+                        <i class="fab fa-google social-icon"></i>
+                        <i class="fab fa-facebook-f social-icon"></i>
+                        <i class="fab fa-twitter social-icon"></i>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./authen.js"></script>
+</body>
+
+</html>
